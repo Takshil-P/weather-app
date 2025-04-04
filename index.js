@@ -24,7 +24,7 @@ async function getWeatherData() {
 
     try {
         // 🔗 API se weather data fetch karo
-        let response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=3e517d07d70e40bda2932114250404&q=${city}&days=1&aqi=no&alerts=no`);
+        let response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=3e517d07d70e40bda2932114250404&q=${city}&days=1&aqi=no&alerts=no`);
 
         // ❗ Agar response ok nahi hai toh error throw karo
         if (!response.ok) {

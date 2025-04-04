@@ -83,7 +83,10 @@ body {
     padding: 10px;
     border-radius: 10px;
     color: white;
-    width: 70px;
+    min-width: 70px;
+    max-width: 100px; /* Allow flexible width */
     font-size: 12px;
     text-align: center;
+    word-wrap: break-word; /* Prevent text overflow */
 }
+

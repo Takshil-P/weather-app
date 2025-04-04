@@ -72,8 +72,8 @@ body {
 .hourly-forecast {
     margin-top: 20px;
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    justify-content: space-evenly;
+    gap: 5px;
     flex-wrap: wrap;
 }
 
@@ -83,10 +83,15 @@ body {
     padding: 10px;
     border-radius: 10px;
     color: white;
-    min-width: 70px;
-    max-width: 100px; /* Allow flexible width */
+    width: 70px;
     font-size: 12px;
     text-align: center;
-    word-wrap: break-word; /* Prevent text overflow */
+}
+
+.hour p {
+    word-wrap: break-word;  /* Ensures text wraps */
+    overflow-wrap: break-word; /* Better compatibility */
+    white-space: normal;   /* Allows multi-line wrapping */
+    text-overflow: ellipsis; /* Optional: Adds '...' if needed */
 }
 
